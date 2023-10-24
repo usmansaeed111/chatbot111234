@@ -35,16 +35,18 @@ body {
 .chat-window {
   flex: auto;
   max-height: calc(100% - 60px);
-  background: #ffffff;
+  background: #2f323b;
   overflow: auto;
 }
-.chat-input {
-  flex: 0 0 auto;
-  height: 60px;
-  background: #40434e;
-  border-top: 1px solid #2671ff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+.chat-window {
+  flex: auto;
+  max-height: calc(100% - 60px);
+  background-image: url('https://images.pexels.com/photos/4723037/pexels-photo-4723037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover; /* Adjust the sizing as needed */
+  background-position: center center; /* Center the background image */
+  overflow: auto;
 }
+
 .chat-input input {
   height: 59px;
   line-height: 60px;
@@ -161,9 +163,13 @@ body {
   align-items: center;
   margin-left: 8px;
 }
-.message-text{
-    margin: 8px 0px 8px 0px;
+.message-text {
+  margin: 8px 0;
+  background: linear-gradient(135deg, #e0e0e0, #ffffff); /* Use linear gradient for shading */
+  border-radius: 10px; /* Adjust the radius as needed */
+  padding: 10px; /* Add padding to make the text more readable */
 }
+
 /* Additional media queries for different screen sizes if needed */
 .chat-bot{
     margin-top: 20px;
